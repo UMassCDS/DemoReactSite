@@ -1,8 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React, {useEffect, useState} from 'react';
-// import * as pImage from "./start_main";
-import Button from "@mui/material/Button";
+import React, { useEffect, useState } from 'react';
 
 function buttonNothing() {
   console.log("pick me");
@@ -36,18 +34,17 @@ function App() {
         <p>
           Demo App
         </p>
-        {backendMessage}
+        {backendMessage.length > 0 && <p>{backendMessage}</p>}
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
         </a>
-        <Button onClick={buttonNothing} autoFocus>
-          Do Nothing
-        </Button>
+        <button onClick={buttonNothing} autoFocus>
+          Test Backend Connection
+        </button>
       </header>
     </div>
   );

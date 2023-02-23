@@ -18,14 +18,14 @@ app.add_middleware(
 
 MONGO_URI = os.getenv("MONGO_URI")
 client = MongoClient(MONGO_URI, 27017)
-db = client["roost_db"]
+db = client["demo_db"]
 img_files = db["img_files"] # Create collection for image files
 bounding_boxes = db["bounding_boxes"] # Create collection for bounding boxes
 
 
 @app.get("/")
 async def root():
-    return {"detail": "Roost Backend is Running!"}
+    return {"detail": "Demo Backend is Running!"}
 
 @app.get("/test_db_entry")
 def get_test_db_entry():

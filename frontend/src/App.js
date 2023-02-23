@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, {useEffect, useState} from 'react';
-import * as pImage from "./start_main";
+// import * as pImage from "./start_main";
 import Button from "@mui/material/Button";
 
 function buttonNothing() {
@@ -26,7 +26,7 @@ function App() {
 
   useEffect(() => {
     callBackendDemo();
-  }, [callBackendDemo]);
+  }, []);
 
 
   return (
@@ -34,7 +34,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Roost App
+          Demo App
         </p>
         {backendMessage}
         <a

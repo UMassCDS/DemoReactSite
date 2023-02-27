@@ -1,5 +1,5 @@
 # WebSite StartApp
-written by: Cody Richter
+Written By: [Cody Richter](https://github.com/CodyRichter)
 
 to start:
 `docker-compose build`
@@ -8,4 +8,4 @@ to start:
 
 when done:
 
-`docker-compose down`# DemoWebSite
+`docker-compose down`
